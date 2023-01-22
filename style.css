@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #222831;
+  color: #eeeeee;
+  height: 75px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.gameContainer {
+  background-color: white;
+  display: flex;
+  margin: top;
+  justify-content: center;
+}
+
+.Container {
+  display: grid;
+  padding-top: 25px;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  font-family: "Roboto Slab", serif;
+}
+
+.box {
+  border: 2px solid black;
+  font-size: 8vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: #95e1d3;
+}
+
+.info {
+  font-size: 25px;
+}
+
+.gameInfo {
+  padding-top: 30px;
+  padding: 0 40px;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+.gameInfo h1 {
+  font-size: 2.5rem;
+}
+
+.imgbox img {
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+#reset {
+  padding: 6px 16px;
+  background: rgb(201, 231, 242);
+  border-radius: 6px;
+  margin: 0 23px;
+  cursor: pointer;
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+@media media-type and (max-width: 950px) {
+  .gameContainer {
+    flex-wrap: wrap;
+  }
+  .gameInfo {
+    margin-top: 34px;
+  }
+  .gameInfo h1 {
+    font-size: 1rem;
+  }
+  .Container {
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+  }
+}
